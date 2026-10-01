@@ -2,7 +2,7 @@
   "_comment": "판정 스크립트용 사본. 원본은 design.md이며 어긋나면 design.md가 우선한다. 에이전트는 수정하지 못한다.",
   "frame": { "width": 390, "height": 844, "count": 3, "source": "story-work.md 4번, design.md 53줄" },
   "min_references": 10,
-  "require_service_screens": false,
+  "require_service_screens": true,
   "max_returns_per_segment": 3,
   "radius": {
     "allowed_px": [0, 16, 24, 9999],

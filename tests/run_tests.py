@@ -155,7 +155,9 @@ def main():
     w = fresh()
     t = (w / "03-keyscreens.md").read_text(encoding="utf-8").replace("asset-submit", "other").replace("sell-request", "other")
     (w / "03-keyscreens.md").write_text(t, encoding="utf-8")
-    check("T17 서비스 화면 0개는 기본 통과(합의된 '해당 없음' 규칙)", judge(w, "g3"), 0)
+    flag = json.loads((ROOT / "rules.json").read_text(encoding="utf-8")).get("require_service_screens", False)
+    check(f"T17 서비스 화면 0개: require_service_screens={flag}이면 {'실패' if flag else '통과(합의된 해당 없음 규칙)'}",
+          judge(w, "g3"), 1 if flag else 0)
 
     # --- 2차 /code-review 대응 (T18~T19) ---
     broken = subprocess.run([PY, str(ROOT / "scripts" / "guard.py")], input="not json", capture_output=True, text=True, encoding="utf-8", errors="replace")

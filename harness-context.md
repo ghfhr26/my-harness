@@ -13,5 +13,10 @@
 - uibowl MCP는 에이전트가 자동 호출한다.
 - Figma 쓰기는 사람 승인(5번 컨셉 시안 확정) 이후에만 한다.
 
+## 종단 시험 설정
+- 주제: 자산 제출 화면
+- Figma 팀: hj Kim's team (Pro, Full 시트)
+- rules.json의 require_service_screens: true (자산 제출·판매 신청 화면이 둘 다 있어야 G3 통과). 다른 주제로 돌릴 때는 false로 되돌린다.
+
 ## 열린 항목
 - 별도 화면설계서가 생기면 입력 자료를 교체한다.
