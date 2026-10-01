@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "deny": [
+      "Write(**/approval.md)",
+      "Edit(**/approval.md)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit|NotebookEdit|Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"$CLAUDE_PROJECT_DIR/scripts/guard.py\""
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "_comment": "판정 스크립트용 사본. 원본은 design.md이며 어긋나면 design.md가 우선한다. 에이전트는 수정하지 못한다.",
+  "frame": { "width": 390, "height": 844, "count": 3, "source": "story-work.md 4번, design.md 53줄" },
+  "min_references": 10,
+  "require_service_screens": false,
+  "max_returns_per_segment": 3,
+  "radius": {
+    "allowed_px": [0, 16, 24, 9999],
+    "allowed_percent": [30],
+    "percent_only_for": ["app-icon"],
+    "source": "design.md 153~156, 161"
+  },
+  "colors": {
+    "allowed_hex": ["#141414", "#0066ff", "#ffffff", "#f3f3f3", "#f0f0f0", "#e0e0e0", "#262626", "#707070", "#adadad"],
+    "accent_hex": "#0066ff",
+    "accent_allowed_usage": ["price-badge", "savings-callout"],
+    "assumption": "on-primary는 design.md에 hex가 없어 #ffffff로 간주한다",
+    "source": "design.md 25~41, 26, 305, 314"
+  },
+  "spacing": { "allowed_px": [4, 8, 12, 16, 24, 32, 48, 64], "source": "design.md 83" },
+  "font": {
+    "family": "Pretendard",
+    "allowed_size_weight": [
+      [32, 700], [28, 700], [24, 700], [20, 700], [18, 700],
+      [17, 600], [17, 300], [15, 400], [13, 400], [15, 600], [12, 600], [12, 400]
+    ],
+    "source": "design.md 51, 59~70"
+  },
+  "shadow": {
+    "allowed_count": 0,
+    "source": "design.md 13, 313",
+    "note": "design.md 286·294행의 ex-modal-card/ex-toast는 shadow를 언급해 313행과 충돌한다. 313행(금지)을 따른다."
+  },
+  "service_rules": {
+    "asset_submit": {
+      "screen_type": "asset-submit",
+      "requires": ["공개 범위 선택", "기본값:비공개"],
+      "source": "story-service.md 어기면 안 되는 것 1, prd.md §14"
+    },
+    "sell_request": {
+      "screen_type": "sell-request",
+      "requires": ["검수 상태", "금지 항목 안내"],
+      "source": "story-service.md 어기면 안 되는 것 2, prd.md §14, §6-7"
+    }
+  }
+}
