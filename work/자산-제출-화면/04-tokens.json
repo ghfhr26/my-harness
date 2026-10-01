@@ -1,0 +1,30 @@
+{
+  "tokens": [
+    {"name": "rounded.sm", "type": "radius", "value": "16px", "usage": "text-input, attach-dropzone, attached-file-row"},
+    {"name": "rounded.md", "type": "radius", "value": "24px", "usage": "검수 상태 card, 금지 항목 안내 card, asset-card"},
+    {"name": "rounded.full", "type": "radius", "value": "9999px", "usage": "button, badge, segmented-control, floating-button"},
+
+    {"name": "colors.ink", "type": "color", "value": "#141414", "usage": "text, button-primary fill, active badge fill"},
+    {"name": "colors.canvas", "type": "color", "value": "#ffffff", "usage": "screen background, active segment, on-primary label"},
+    {"name": "colors.canvas-soft", "type": "color", "value": "#f3f3f3", "usage": "segmented-control track, 검수 상태 card, inactive badge, disabled button"},
+    {"name": "colors.field", "type": "color", "value": "#f0f0f0", "usage": "text-input fill, attach-dropzone fill"},
+    {"name": "colors.hairline-soft", "type": "color", "value": "#f0f0f0", "usage": "card and file-row 1px outline"},
+    {"name": "colors.hairline", "type": "color", "value": "#e0e0e0", "usage": "button-outline 1px border"},
+    {"name": "colors.text-muted", "type": "color", "value": "#707070", "usage": "secondary text, counters, helper text"},
+    {"name": "colors.text-faint", "type": "color", "value": "#adadad", "usage": "placeholder, disabled label"},
+
+    {"name": "spacing.xxs", "type": "spacing", "value": "4px", "usage": "segmented-control inner padding, card info gap, badge vertical padding"},
+    {"name": "spacing.xs", "type": "spacing", "value": "8px", "usage": "label-to-field gap, button gap, badge wrap gap"},
+    {"name": "spacing.sm", "type": "spacing", "value": "12px", "usage": "input vertical padding, badge horizontal padding, card inner gap"},
+    {"name": "spacing.md", "type": "spacing", "value": "16px", "usage": "screen side padding, card padding, bottom-cta padding"},
+    {"name": "spacing.lg", "type": "spacing", "value": "24px", "usage": "section gap in body"},
+
+    {"name": "typography.heading-3", "type": "font", "value": {"family": "Noto Sans KR", "size": 20, "weight": 700}, "usage": "screen-title (line-height 1.35)"},
+    {"name": "typography.title", "type": "font", "value": {"family": "Noto Sans KR", "size": 17, "weight": 600}, "usage": "card titles. Figma renders Medium (500) because Noto Sans KR has no SemiBold"},
+    {"name": "typography.body", "type": "font", "value": {"family": "Noto Sans KR", "size": 15, "weight": 400}, "usage": "input text, list items"},
+    {"name": "typography.link", "type": "font", "value": {"family": "Noto Sans KR", "size": 15, "weight": 600}, "usage": "button labels, field labels, segment active. Figma renders Medium (500)"},
+    {"name": "typography.body-sm", "type": "font", "value": {"family": "Noto Sans KR", "size": 13, "weight": 400}, "usage": "guide copy in cards"},
+    {"name": "typography.label", "type": "font", "value": {"family": "Noto Sans KR", "size": 12, "weight": 600}, "usage": "badge labels, 기본값:비공개 label. Figma renders Medium (500)"},
+    {"name": "typography.caption", "type": "font", "value": {"family": "Noto Sans KR", "size": 12, "weight": 400}, "usage": "counters, helper text"}
+  ]
+}
