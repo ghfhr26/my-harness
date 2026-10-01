@@ -51,7 +51,7 @@ def good_work(base):
         {"name": "c-ink", "type": "color", "value": "#141414", "usage": "text"},
         {"name": "c-badge", "type": "color", "value": "#0066ff", "usage": "price-badge"},
         {"name": "s-md", "type": "spacing", "value": "16px"},
-        {"name": "f-body", "type": "font", "value": {"family": "Pretendard", "size": 15, "weight": 400}},
+        {"name": "f-body", "type": "font", "value": {"family": "Noto Sans KR", "size": 15, "weight": 400}},
     ]}), encoding="utf-8")
     (w / "04-components.md").write_text(
         "| 컴포넌트 | 모서리 | 그림자 | 색상 | 용도 |\n|---|---|---|---|---|\n"
