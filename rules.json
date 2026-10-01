@@ -19,7 +19,7 @@
   },
   "spacing": { "allowed_px": [4, 8, 12, 16, 24, 32, 48, 64], "source": "design.md 83" },
   "font": {
-    "family": "Pretendard",
+    "family": "Noto Sans KR",
     "allowed_size_weight": [
       [32, 700], [28, 700], [24, 700], [20, 700], [18, 700],
       [17, 600], [17, 300], [15, 400], [13, 400], [15, 600], [12, 600], [12, 400]
